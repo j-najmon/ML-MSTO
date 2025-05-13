@@ -65,6 +65,8 @@ macro.x_lb(1) = 0; macro.x_ub(1) = 0.8; % bounds for the density design %\
 macro.x_lb(2) = 0; macro.x_ub(2) = 1; % bounds for the weight design %\
 macro.h_fd = 0; % SA via ANN: h_fd = 0; SA via CFD: h_fd = [0.001, 0.001] (perturbation size for density and weight design variables) %\
 macro.vf_cutoff = 0.1; % cutoff volume fraction for CH interpolation %\
+
+NOTE: Before running 3D examples, the 'Homog3D_001_Mecha_N1000000_nels10.mat' file needs to be unzipped and placed in the 'Phys001_Mecha' folder.
  
 macro.alg = 3; % alg=1: fmincon, alg=2: OC, alg=3: GOC, alg=4: MMA %\
 macro.maxloop = 100;   % Maximum number of iterations %\
